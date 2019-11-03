@@ -1,9 +1,9 @@
-const path = require('path');
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+import path from 'path'
+import webpack from 'webpack'
+import HtmlWebpackPlugin from 'html-webpack-plugin'
+import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin'
 
-module.exports = {
+export default {
   mode: 'development',
   entry: ['./src/index'],
   output: {

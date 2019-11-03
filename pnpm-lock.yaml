@@ -13,6 +13,7 @@ devDependencies:
   '@babel/preset-env': 7.6.3_@babel+core@7.6.4
   '@babel/preset-react': 7.6.3_@babel+core@7.6.4
   '@babel/preset-typescript': 7.6.0_@babel+core@7.6.4
+  '@babel/register': 7.6.2_@babel+core@7.6.4
   '@types/d3': 5.7.2
   '@types/react': 16.9.11
   '@types/react-dom': 16.9.3
@@ -840,6 +841,19 @@ packages:
       '@babel/core': ^7.0.0-0
     resolution:
       integrity: sha512-4xKw3tTcCm0qApyT6PqM9qniseCE79xGHiUnNdKGdxNsGUc2X7WwZybqIpnTmoukg3nhPceI5KPNzNqLNeIJww==
+  /@babel/register/7.6.2_@babel+core@7.6.4:
+    dependencies:
+      '@babel/core': 7.6.4
+      find-cache-dir: 2.1.0
+      lodash: 4.17.15
+      mkdirp: 0.5.1
+      pirates: 4.0.1
+      source-map-support: 0.5.16
+    dev: true
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    resolution:
+      integrity: sha512-xgZk2LRZvt6i2SAUWxc7ellk4+OYRgS3Zpsnr13nMS1Qo25w21Uu8o6vTOAqNaxiqrnv30KTYzh9YWY2k21CeQ==
   /@babel/template/7.6.0:
     dependencies:
       '@babel/code-frame': 7.5.5
@@ -4100,6 +4114,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-h/zcD8H9kaDZ9ALUWwlBUDo6TKF8a7qBSCSEGfjTVIYeqsioSKaAX+BN7NgiMGp6iSIXZ3PxgCu8KS3b71YK5Q==
+  /node-modules-regexp/1.0.0:
+    dev: true
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-jZ2+KJZKSsVxLpExZCEHxx6Q7EA=
   /node-releases/1.1.39:
     dependencies:
       semver: 6.3.0
@@ -4436,6 +4456,14 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-clVrgM+g1IqXToDnckjoDtT3+HA=
+  /pirates/4.0.1:
+    dependencies:
+      node-modules-regexp: 1.0.0
+    dev: true
+    engines:
+      node: '>= 6'
+    resolution:
+      integrity: sha512-WuNqLTbMI3tmfef2TKxlQmAiLHKtFhlsCZnPIpuv2Ow0RDVO8lfy1Opf4NUzlMXLjPl+Men7AuVdX6TA+s+uGA==
   /pkg-dir/3.0.0:
     dependencies:
       find-up: 3.0.0
@@ -5900,6 +5928,7 @@ specifiers:
   '@babel/preset-env': ^7.6.0
   '@babel/preset-react': ^7.0.0
   '@babel/preset-typescript': ^7.6.0
+  '@babel/register': ^7.6.2
   '@hot-loader/react-dom': ^16.10.2
   '@types/d3': ^5.7.2
   '@types/react': ^16.9.2
